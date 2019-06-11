@@ -8,8 +8,8 @@ int main(){
 	n= strtol(str, &end, 10);
 	if(*end==0){
 	    if(n<0)
-	    printf("invalid")
-	    if(!(n%2))
+	    printf("invalid");
+	    else if(!(n%2))
 	    printf("Even");
 	    else
 	    printf("Odd");
