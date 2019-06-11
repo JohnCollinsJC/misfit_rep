@@ -4,7 +4,6 @@ int main() {
 	char s[100];
 	scanf("%s",s);
 	int n=strlen(s),len=0,i,j,t;
-	int a[26],mask=1;
 // 	printf("%s",s);
 	
 	for(i=0;i<n;i++){
@@ -17,12 +16,14 @@ int main() {
 	            t++;
 	            a[s[j]-'a']=1;
 	        }
-	        else
-	            break;
+	        else{
+			printf("%d",len);
+			return 0;        
+		}
 	    }
-	    if(t>len)
-	    len=t;
+// 	    if(t>len)
+// 	    len=t;
 	}
-	printf("%d",len);
-	return 0;
+// 	printf("%d",len);
+// 	return 0;
 }
