@@ -24,6 +24,7 @@ int main() {
 // 	    if(t>len)
 // 	    len=t;
 	}
+	return 0;
 // 	printf("%d",len);
 // 	return 0;
 }
