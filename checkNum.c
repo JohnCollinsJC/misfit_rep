@@ -1,17 +1,21 @@
 #include<stdio.h>
-#include<ctype.h>
+#include<stdlib.h>
 int main(){
-	int num;
-	scanf("%d",&num);
-	if(isdigit(num)){
-	if(num==0)
-	printf("Zero");
-	else if(num>0)
-	printf("Positive");
-	else
-	printf("Negative");
+	int n;
+	char *end;
+	char str[100];
+	scanf("%s",str);
+	n= strtol(str, &end, 10);
+	if(*end==0){
+	    if(n<0)
+	    printf("Invalid")
+	    if(!(n%2))
+	    printf("Even");
+	    else
+	    printf("Odd");
 	}
 	else
-		printf("Invalid Input");
+	printf("Invalid");
+//  	printf(" %d %d",n,*end);
 	return 0;
 }
