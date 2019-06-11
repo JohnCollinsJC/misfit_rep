@@ -17,7 +17,7 @@ int main() {
 	            a[s[j]-'a']=1;
 	        }
 	        else{
-			printf("%d",len);
+			printf("%d",t);
 			return 0;        
 		}
 	    }
