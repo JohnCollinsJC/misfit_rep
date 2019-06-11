@@ -8,14 +8,14 @@ int main(){
 	n= strtol(str, &end, 10);
 	if(*end==0){
 	    if(n<0)
-	    printf("Invalid")
+	    printf("invalid")
 	    if(!(n%2))
 	    printf("Even");
 	    else
 	    printf("Odd");
 	}
 	else
-	printf("Invalid");
+	printf("invalid");
 //  	printf(" %d %d",n,*end);
 	return 0;
 }
