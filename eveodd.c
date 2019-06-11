@@ -7,13 +7,15 @@ int main(){
 	scanf("%s",str);
 	n= strtol(str, &end, 10);
 	if(*end==0){
+	    if(n<0)
+	    printf("invalid")
 	    if(!(n%2))
 	    printf("Even");
 	    else
 	    printf("Odd");
 	}
 	else
-	printf("Invalid Input");
+	printf("invalid");
 //  	printf(" %d %d",n,*end);
 	return 0;
 }
