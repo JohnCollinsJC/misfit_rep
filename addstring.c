@@ -13,7 +13,7 @@ int main()
     for(int i=0; i<len; i++){
         str3[i]=(str1[i]-'a'+str2[i]-'a')%26+'b';
     }
-    
+    str3[len]='\0';
     printf("%s",str3);
     
     return 0;
